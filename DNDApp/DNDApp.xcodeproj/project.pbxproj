@@ -7,14 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190F54162373357A007EC08B /* CharacterRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F54152373357A007EC08B /* CharacterRace.swift */; };
+		190F541A23734F5B007EC08B /* AbilityScoreStandardArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F541923734F5B007EC08B /* AbilityScoreStandardArrayViewController.swift */; };
+		190F541C23734F71007EC08B /* AbilityScorePointBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F541B23734F71007EC08B /* AbilityScorePointBuyViewController.swift */; };
+		190F541E23734F84007EC08B /* AbilityScoreCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F541D23734F84007EC08B /* AbilityScoreCustomViewController.swift */; };
+		190F542023735315007EC08B /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F541F23735315007EC08B /* Background.swift */; };
+		190F542223735378007EC08B /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F542123735378007EC08B /* Features.swift */; };
+		190F5424237353EF007EC08B /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F5423237353EF007EC08B /* Spells.swift */; };
+		190F5426237353FD007EC08B /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F5425237353FD007EC08B /* Equipment.swift */; };
+		190F542823737D62007EC08B /* DNDCharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F542723737D62007EC08B /* DNDCharacterController.swift */; };
+		190F542A23737E6D007EC08B /* DNDContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F542923737E6D007EC08B /* DNDContants.swift */; };
+		194249C0237A074100786A2E /* CharacterRaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194249BF237A074100786A2E /* CharacterRaceController.swift */; };
+		194249C2237A26D900786A2E /* RacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194249C1237A26D900786A2E /* RacesTableViewController.swift */; };
+		194249C6237B127D00786A2E /* Race.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249C5237B127D00786A2E /* Race.storyboard */; };
+		194249C9237B12B100786A2E /* Classes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249C7237B12B100786A2E /* Classes.storyboard */; };
+		194249CB237B147100786A2E /* AbilityScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249CA237B147100786A2E /* AbilityScore.storyboard */; };
+		19576EC0237095330010F91C /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19576EBF237095330010F91C /* CharacterClass.swift */; };
 		196BBF9C23678FA700A5F8B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196BBF9B23678FA700A5F8B3 /* AppDelegate.swift */; };
 		196BBF9E23678FA700A5F8B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196BBF9D23678FA700A5F8B3 /* SceneDelegate.swift */; };
 		196BBFA323678FA700A5F8B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196BBFA123678FA700A5F8B3 /* Main.storyboard */; };
 		196BBFA523678FA800A5F8B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196BBFA423678FA800A5F8B3 /* Assets.xcassets */; };
 		196BBFA823678FA800A5F8B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196BBFA623678FA800A5F8B3 /* LaunchScreen.storyboard */; };
+		196BBFB72368EED600A5F8B3 /* DNDCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196BBFB62368EED600A5F8B3 /* DNDCharacter.swift */; };
+		19CC1D912375F3AB00DEFC9E /* CharacterSubRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC1D902375F3AB00DEFC9E /* CharacterSubRace.swift */; };
+		19CC1D932375F3F400DEFC9E /* RaceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC1D922375F3F400DEFC9E /* RaceList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190F54152373357A007EC08B /* CharacterRace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRace.swift; sourceTree = "<group>"; };
+		190F541923734F5B007EC08B /* AbilityScoreStandardArrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoreStandardArrayViewController.swift; sourceTree = "<group>"; };
+		190F541B23734F71007EC08B /* AbilityScorePointBuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScorePointBuyViewController.swift; sourceTree = "<group>"; };
+		190F541D23734F84007EC08B /* AbilityScoreCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoreCustomViewController.swift; sourceTree = "<group>"; };
+		190F541F23735315007EC08B /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		190F542123735378007EC08B /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
+		190F5423237353EF007EC08B /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
+		190F5425237353FD007EC08B /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		190F542723737D62007EC08B /* DNDCharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNDCharacterController.swift; sourceTree = "<group>"; };
+		190F542923737E6D007EC08B /* DNDContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNDContants.swift; sourceTree = "<group>"; };
+		194249BF237A074100786A2E /* CharacterRaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRaceController.swift; sourceTree = "<group>"; };
+		194249C1237A26D900786A2E /* RacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesTableViewController.swift; sourceTree = "<group>"; };
+		194249C5237B127D00786A2E /* Race.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Race.storyboard; sourceTree = "<group>"; };
+		194249C8237B12B100786A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DNDApp/Views/Storyboards/Base.lproj/Classes.storyboard; sourceTree = "<group>"; };
+		194249CA237B147100786A2E /* AbilityScore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AbilityScore.storyboard; sourceTree = "<group>"; };
+		19576EBF237095330010F91C /* CharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
 		196BBF9823678FA700A5F8B3 /* DNDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196BBF9B23678FA700A5F8B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196BBF9D23678FA700A5F8B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +57,9 @@
 		196BBFA423678FA800A5F8B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		196BBFA723678FA800A5F8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		196BBFA923678FA800A5F8B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		196BBFB62368EED600A5F8B3 /* DNDCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNDCharacter.swift; sourceTree = "<group>"; };
+		19CC1D902375F3AB00DEFC9E /* CharacterSubRace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSubRace.swift; sourceTree = "<group>"; };
+		19CC1D922375F3F400DEFC9E /* RaceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +96,7 @@
 				196BBFB22367908300A5F8B3 /* Models */,
 				196BBFB023678FDC00A5F8B3 /* Views */,
 				196BBFAF23678FBE00A5F8B3 /* Supporting Files */,
+				190F542923737E6D007EC08B /* DNDContants.swift */,
 			);
 			path = DNDApp;
 			sourceTree = "<group>";
@@ -86,6 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				196BBFA123678FA700A5F8B3 /* Main.storyboard */,
+				194249C5237B127D00786A2E /* Race.storyboard */,
+				194249C7237B12B100786A2E /* Classes.storyboard */,
+				194249CA237B147100786A2E /* AbilityScore.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -93,6 +135,15 @@
 		196BBFB22367908300A5F8B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				196BBFB62368EED600A5F8B3 /* DNDCharacter.swift */,
+				19CC1D922375F3F400DEFC9E /* RaceList.swift */,
+				190F54152373357A007EC08B /* CharacterRace.swift */,
+				19CC1D902375F3AB00DEFC9E /* CharacterSubRace.swift */,
+				19576EBF237095330010F91C /* CharacterClass.swift */,
+				190F541F23735315007EC08B /* Background.swift */,
+				190F542123735378007EC08B /* Features.swift */,
+				190F5423237353EF007EC08B /* Spells.swift */,
+				190F5425237353FD007EC08B /* Equipment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +160,8 @@
 		196BBFB42367909100A5F8B3 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				190F542723737D62007EC08B /* DNDCharacterController.swift */,
+				194249BF237A074100786A2E /* CharacterRaceController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -116,6 +169,10 @@
 		196BBFB52367909B00A5F8B3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				190F541923734F5B007EC08B /* AbilityScoreStandardArrayViewController.swift */,
+				190F541B23734F71007EC08B /* AbilityScorePointBuyViewController.swift */,
+				190F541D23734F84007EC08B /* AbilityScoreCustomViewController.swift */,
+				194249C1237A26D900786A2E /* RacesTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -178,8 +235,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194249CB237B147100786A2E /* AbilityScore.storyboard in Resources */,
 				196BBFA823678FA800A5F8B3 /* LaunchScreen.storyboard in Resources */,
+				194249C6237B127D00786A2E /* Race.storyboard in Resources */,
 				196BBFA523678FA800A5F8B3 /* Assets.xcassets in Resources */,
+				194249C9237B12B100786A2E /* Classes.storyboard in Resources */,
 				196BBFA323678FA700A5F8B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,14 +251,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194249C2237A26D900786A2E /* RacesTableViewController.swift in Sources */,
+				19CC1D932375F3F400DEFC9E /* RaceList.swift in Sources */,
+				190F541C23734F71007EC08B /* AbilityScorePointBuyViewController.swift in Sources */,
+				196BBFB72368EED600A5F8B3 /* DNDCharacter.swift in Sources */,
+				190F542823737D62007EC08B /* DNDCharacterController.swift in Sources */,
+				190F5426237353FD007EC08B /* Equipment.swift in Sources */,
+				19CC1D912375F3AB00DEFC9E /* CharacterSubRace.swift in Sources */,
+				190F5424237353EF007EC08B /* Spells.swift in Sources */,
 				196BBF9C23678FA700A5F8B3 /* AppDelegate.swift in Sources */,
+				190F542A23737E6D007EC08B /* DNDContants.swift in Sources */,
+				194249C0237A074100786A2E /* CharacterRaceController.swift in Sources */,
+				19576EC0237095330010F91C /* CharacterClass.swift in Sources */,
+				190F542223735378007EC08B /* Features.swift in Sources */,
+				190F54162373357A007EC08B /* CharacterRace.swift in Sources */,
+				190F542023735315007EC08B /* Background.swift in Sources */,
+				190F541E23734F84007EC08B /* AbilityScoreCustomViewController.swift in Sources */,
 				196BBF9E23678FA700A5F8B3 /* SceneDelegate.swift in Sources */,
+				190F541A23734F5B007EC08B /* AbilityScoreStandardArrayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		194249C7237B12B100786A2E /* Classes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				194249C8237B12B100786A2E /* Base */,
+			);
+			name = Classes.storyboard;
+			sourceTree = "<group>";
+		};
 		196BBFA123678FA700A5F8B3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -338,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9VU68T7UJ;
-				INFOPLIST_FILE = DNDApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DNDApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9VU68T7UJ;
-				INFOPLIST_FILE = DNDApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DNDApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
