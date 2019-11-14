@@ -10,13 +10,9 @@
         <!--Ability Scores-->
         <scene sceneID="qgN-hO-o5W">
             <objects>
-                <tabBarController storyboardIdentifier="AbilityScoreTabViewController" id="wza-Vl-LJ6" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AbilityScoreTVC" title="Ability Scores" id="wza-Vl-LJ6" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Ability Scores" id="bhd-hc-bjc">
-                        <barButtonItem key="rightBarButtonItem" title="Background" id="gLy-en-hJt">
-                            <connections>
-                                <segue destination="Dgl-QI-sBm" kind="show" id="awR-OF-zAf"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Background" id="gLy-en-hJt"/>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q6z-gu-aDE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -24,16 +20,16 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="kS9-cx-Ixu" kind="relationship" relationship="viewControllers" id="Mq0-f2-KKo"/>
-                        <segue destination="mnM-JZ-nR8" kind="relationship" relationship="viewControllers" id="fYP-e3-o8Z"/>
-                        <segue destination="XbT-6h-Pmp" kind="relationship" relationship="viewControllers" id="5i9-MQ-W8T"/>
+                        <segue destination="ATb-TB-tqK" kind="relationship" relationship="viewControllers" id="Mq0-f2-KKo"/>
+                        <segue destination="Yyr-Aa-jFe" kind="relationship" relationship="viewControllers" id="fYP-e3-o8Z"/>
+                        <segue destination="4qk-IH-kIh" kind="relationship" relationship="viewControllers" id="5i9-MQ-W8T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mK6-9e-fFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3143" y="-222"/>
         </scene>
-        <!--Standard Array-->
+        <!--Ability Score Standard Array View Controller-->
         <scene sceneID="R74-TW-mlL">
             <objects>
                 <viewController id="kS9-cx-Ixu" customClass="AbilityScoreStandardArrayViewController" customModule="DNDApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +119,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="CvF-bk-QD4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Standard Array" id="UJ0-et-RYl"/>
+                    <navigationItem key="navigationItem" id="Hma-SP-qYU">
+                        <barButtonItem key="rightBarButtonItem" title="Background" id="L7l-ky-MpH">
+                            <connections>
+                                <segue destination="Dgl-QI-sBm" kind="show" identifier="StandardArrayToBackgroundVC" id="fDF-AK-XFS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkF-2k-qCz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <pickerView contentMode="scaleToFill" id="3U1-bv-ucv">
@@ -131,9 +133,9 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 </pickerView>
             </objects>
-            <point key="canvasLocation" x="2465" y="549"/>
+            <point key="canvasLocation" x="1472" y="554"/>
         </scene>
-        <!--Custom-->
+        <!--Ability Score Custom View Controller-->
         <scene sceneID="k8A-9M-Wmd">
             <objects>
                 <viewController id="XbT-6h-Pmp" customClass="AbilityScoreCustomViewController" customModule="DNDApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -223,13 +225,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Yha-Q9-Yup"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Custom" id="odD-dR-zuK"/>
+                    <navigationItem key="navigationItem" id="ac3-SJ-c9n">
+                        <barButtonItem key="rightBarButtonItem" title="Background" id="pmF-kN-hRy">
+                            <connections>
+                                <segue destination="9JT-qv-Dvb" kind="show" id="ZK2-4L-57C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVf-FU-LPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3820" y="548"/>
+            <point key="canvasLocation" x="5633" y="570"/>
         </scene>
-        <!--Point Buy-->
+        <!--Ability Score Point Buy View Controller-->
         <scene sceneID="4Du-BB-xqT">
             <objects>
                 <viewController id="mnM-JZ-nR8" customClass="AbilityScorePointBuyViewController" customModule="DNDApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -307,19 +315,104 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cSv-Dd-4ca"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Point Buy" id="0P7-dv-Od9"/>
+                    <navigationItem key="navigationItem" id="QJv-mz-rRb">
+                        <barButtonItem key="rightBarButtonItem" title="Background" id="UTj-By-Ske">
+                            <connections>
+                                <segue destination="ZvQ-vi-SNq" kind="show" identifier="" id="QZk-8w-oVr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z64-3P-4sD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3141" y="548"/>
+            <point key="canvasLocation" x="3559" y="844"/>
         </scene>
-        <!--UIViewController-8ds-el-7jY-->
+        <!--BackgroundVC-->
+        <scene sceneID="sUj-e6-C6d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Background" referencedIdentifier="BackgroundVC" id="ZvQ-vi-SNq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WXD-Pm-6RN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXQ-HV-poA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4222" y="845"/>
+        </scene>
+        <!--BackgroundVC-->
         <scene sceneID="aEm-em-7HA">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-8ds-el-7jY" id="Dgl-QI-sBm" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Background" referencedIdentifier="BackgroundVC" id="Dgl-QI-sBm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vIL-i3-ur0"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skc-4a-Y6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3954" y="-222"/>
+            <point key="canvasLocation" x="2217" y="552"/>
+        </scene>
+        <!--Standard Array-->
+        <scene sceneID="arP-8o-ChU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ATb-TB-tqK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Standard Array" id="UJ0-et-RYl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oG0-l2-DfB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kS9-cx-Ixu" kind="relationship" relationship="rootViewController" id="ftn-eH-aay"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCV-0o-vdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="554"/>
+        </scene>
+        <!--Point Buy-->
+        <scene sceneID="wdk-9w-KHD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yyr-Aa-jFe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Point Buy" id="0P7-dv-Od9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o7Y-eq-adK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mnM-JZ-nR8" kind="relationship" relationship="rootViewController" id="68P-VD-29b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbQ-Q2-gp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2786" y="844"/>
+        </scene>
+        <!--Custom-->
+        <scene sceneID="gIF-tl-iZH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4qk-IH-kIh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Custom" id="odD-dR-zuK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DOF-hL-xhh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XbT-6h-Pmp" kind="relationship" relationship="rootViewController" id="255-Vf-Mva"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rR1-sc-N0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4810" y="570"/>
+        </scene>
+        <!--BackgroundVC-->
+        <scene sceneID="Jqp-T5-noB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Background" referencedIdentifier="BackgroundVC" id="9JT-qv-Dvb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EHI-r0-Hgy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5y-8j-HsT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6399" y="570"/>
         </scene>
     </scenes>
 </document>

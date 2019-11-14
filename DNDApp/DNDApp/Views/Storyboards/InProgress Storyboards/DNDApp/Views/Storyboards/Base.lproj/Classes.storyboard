@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="3286" y="-222"/>
         </scene>
-        <!--AbilityScoreTabViewController-->
+        <!--AbilityScoreTVC-->
         <scene sceneID="Hzm-oh-T0u">
             <objects>
-                <viewControllerPlaceholder storyboardName="AbilityScore" referencedIdentifier="AbilityScoreTabViewController" id="mek-Nt-bgj" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="AbilityScore" referencedIdentifier="AbilityScoreTVC" id="mek-Nt-bgj" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="wAu-cN-eWr"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJ6-fB-2Bi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

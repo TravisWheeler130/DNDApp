@@ -22,6 +22,13 @@
 		194249C6237B127D00786A2E /* Race.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249C5237B127D00786A2E /* Race.storyboard */; };
 		194249C9237B12B100786A2E /* Classes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249C7237B12B100786A2E /* Classes.storyboard */; };
 		194249CB237B147100786A2E /* AbilityScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249CA237B147100786A2E /* AbilityScore.storyboard */; };
+		194249CE237B2FF100786A2E /* Background.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249CC237B2FF100786A2E /* Background.storyboard */; };
+		194249D1237B325000786A2E /* FeatsAndProficiencies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249CF237B325000786A2E /* FeatsAndProficiencies.storyboard */; };
+		194249D3237B328200786A2E /* Spells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249D2237B328200786A2E /* Spells.storyboard */; };
+		194249D5237B32A400786A2E /* Equipment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249D4237B32A400786A2E /* Equipment.storyboard */; };
+		194249D7237B32C100786A2E /* CharacterNameAndImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249D6237B32C100786A2E /* CharacterNameAndImage.storyboard */; };
+		194249DA237B330B00786A2E /* CharacterSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194249D8237B330B00786A2E /* CharacterSheet.storyboard */; };
+		194249E0237CD4C500786A2E /* RaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194249DF237CD4C500786A2E /* RaceDetailViewController.swift */; };
 		19576EC0237095330010F91C /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19576EBF237095330010F91C /* CharacterClass.swift */; };
 		196BBF9C23678FA700A5F8B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196BBF9B23678FA700A5F8B3 /* AppDelegate.swift */; };
 		196BBF9E23678FA700A5F8B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196BBF9D23678FA700A5F8B3 /* SceneDelegate.swift */; };
@@ -49,6 +56,13 @@
 		194249C5237B127D00786A2E /* Race.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Race.storyboard; sourceTree = "<group>"; };
 		194249C8237B12B100786A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DNDApp/Views/Storyboards/Base.lproj/Classes.storyboard; sourceTree = "<group>"; };
 		194249CA237B147100786A2E /* AbilityScore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AbilityScore.storyboard; sourceTree = "<group>"; };
+		194249CD237B2FF100786A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DNDApp/Views/Storyboards/Base.lproj/Background.storyboard; sourceTree = "<group>"; };
+		194249D0237B325000786A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DNDApp/Views/Storyboards/DNDApp/Views/Storyboards/Base.lproj/FeatsAndProficiencies.storyboard; sourceTree = "<group>"; };
+		194249D2237B328200786A2E /* Spells.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spells.storyboard; sourceTree = "<group>"; };
+		194249D4237B32A400786A2E /* Equipment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Equipment.storyboard; sourceTree = "<group>"; };
+		194249D6237B32C100786A2E /* CharacterNameAndImage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CharacterNameAndImage.storyboard; sourceTree = "<group>"; };
+		194249D9237B330B00786A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DNDApp/Views/Storyboards/Base.lproj/CharacterSheet.storyboard; sourceTree = "<group>"; };
+		194249DF237CD4C500786A2E /* RaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailViewController.swift; sourceTree = "<group>"; };
 		19576EBF237095330010F91C /* CharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
 		196BBF9823678FA700A5F8B3 /* DNDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196BBF9B23678FA700A5F8B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +87,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194249DD237CC42500786A2E /* InProgress Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				194249C7237B12B100786A2E /* Classes.storyboard */,
+				194249CA237B147100786A2E /* AbilityScore.storyboard */,
+				194249CC237B2FF100786A2E /* Background.storyboard */,
+				194249CF237B325000786A2E /* FeatsAndProficiencies.storyboard */,
+				194249D2237B328200786A2E /* Spells.storyboard */,
+				194249D4237B32A400786A2E /* Equipment.storyboard */,
+				194249D6237B32C100786A2E /* CharacterNameAndImage.storyboard */,
+				194249D8237B330B00786A2E /* CharacterSheet.storyboard */,
+			);
+			path = "InProgress Storyboards";
+			sourceTree = "<group>";
+		};
+		194249DE237CC50A00786A2E /* InProgress Models */ = {
+			isa = PBXGroup;
+			children = (
+				19576EBF237095330010F91C /* CharacterClass.swift */,
+				190F541F23735315007EC08B /* Background.swift */,
+				190F542123735378007EC08B /* Features.swift */,
+				190F5423237353EF007EC08B /* Spells.swift */,
+				190F5425237353FD007EC08B /* Equipment.swift */,
+			);
+			path = "InProgress Models";
+			sourceTree = "<group>";
+		};
+		194249E1237CD4CD00786A2E /* InProgress ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				190F541923734F5B007EC08B /* AbilityScoreStandardArrayViewController.swift */,
+				190F541B23734F71007EC08B /* AbilityScorePointBuyViewController.swift */,
+				190F541D23734F84007EC08B /* AbilityScoreCustomViewController.swift */,
+			);
+			path = "InProgress ViewControllers";
+			sourceTree = "<group>";
+		};
 		196BBF8F23678FA700A5F8B3 = {
 			isa = PBXGroup;
 			children = (
@@ -124,10 +175,9 @@
 		196BBFB123678FE200A5F8B3 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				194249DD237CC42500786A2E /* InProgress Storyboards */,
 				196BBFA123678FA700A5F8B3 /* Main.storyboard */,
 				194249C5237B127D00786A2E /* Race.storyboard */,
-				194249C7237B12B100786A2E /* Classes.storyboard */,
-				194249CA237B147100786A2E /* AbilityScore.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -135,15 +185,11 @@
 		196BBFB22367908300A5F8B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				194249DE237CC50A00786A2E /* InProgress Models */,
 				196BBFB62368EED600A5F8B3 /* DNDCharacter.swift */,
 				19CC1D922375F3F400DEFC9E /* RaceList.swift */,
 				190F54152373357A007EC08B /* CharacterRace.swift */,
 				19CC1D902375F3AB00DEFC9E /* CharacterSubRace.swift */,
-				19576EBF237095330010F91C /* CharacterClass.swift */,
-				190F541F23735315007EC08B /* Background.swift */,
-				190F542123735378007EC08B /* Features.swift */,
-				190F5423237353EF007EC08B /* Spells.swift */,
-				190F5425237353FD007EC08B /* Equipment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,10 +215,9 @@
 		196BBFB52367909B00A5F8B3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				190F541923734F5B007EC08B /* AbilityScoreStandardArrayViewController.swift */,
-				190F541B23734F71007EC08B /* AbilityScorePointBuyViewController.swift */,
-				190F541D23734F84007EC08B /* AbilityScoreCustomViewController.swift */,
+				194249E1237CD4CD00786A2E /* InProgress ViewControllers */,
 				194249C1237A26D900786A2E /* RacesTableViewController.swift */,
+				194249DF237CD4C500786A2E /* RaceDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -235,11 +280,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194249D1237B325000786A2E /* FeatsAndProficiencies.storyboard in Resources */,
 				194249CB237B147100786A2E /* AbilityScore.storyboard in Resources */,
+				194249DA237B330B00786A2E /* CharacterSheet.storyboard in Resources */,
 				196BBFA823678FA800A5F8B3 /* LaunchScreen.storyboard in Resources */,
+				194249CE237B2FF100786A2E /* Background.storyboard in Resources */,
 				194249C6237B127D00786A2E /* Race.storyboard in Resources */,
+				194249D3237B328200786A2E /* Spells.storyboard in Resources */,
 				196BBFA523678FA800A5F8B3 /* Assets.xcassets in Resources */,
+				194249D5237B32A400786A2E /* Equipment.storyboard in Resources */,
 				194249C9237B12B100786A2E /* Classes.storyboard in Resources */,
+				194249D7237B32C100786A2E /* CharacterNameAndImage.storyboard in Resources */,
 				196BBFA323678FA700A5F8B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +313,7 @@
 				196BBF9C23678FA700A5F8B3 /* AppDelegate.swift in Sources */,
 				190F542A23737E6D007EC08B /* DNDContants.swift in Sources */,
 				194249C0237A074100786A2E /* CharacterRaceController.swift in Sources */,
+				194249E0237CD4C500786A2E /* RaceDetailViewController.swift in Sources */,
 				19576EC0237095330010F91C /* CharacterClass.swift in Sources */,
 				190F542223735378007EC08B /* Features.swift in Sources */,
 				190F54162373357A007EC08B /* CharacterRace.swift in Sources */,
@@ -281,6 +333,30 @@
 				194249C8237B12B100786A2E /* Base */,
 			);
 			name = Classes.storyboard;
+			sourceTree = "<group>";
+		};
+		194249CC237B2FF100786A2E /* Background.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				194249CD237B2FF100786A2E /* Base */,
+			);
+			name = Background.storyboard;
+			sourceTree = "<group>";
+		};
+		194249CF237B325000786A2E /* FeatsAndProficiencies.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				194249D0237B325000786A2E /* Base */,
+			);
+			name = FeatsAndProficiencies.storyboard;
+			sourceTree = "<group>";
+		};
+		194249D8237B330B00786A2E /* CharacterSheet.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				194249D9237B330B00786A2E /* Base */,
+			);
+			name = CharacterSheet.storyboard;
 			sourceTree = "<group>";
 		};
 		196BBFA123678FA700A5F8B3 /* Main.storyboard */ = {

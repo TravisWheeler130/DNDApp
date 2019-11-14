@@ -8,37 +8,49 @@
 
 import Foundation
 
-class CharacterRaceController:Decodable {
+class CharacterRaceController {
     
     static let shared = CharacterRaceController()
+    
+    var races: [RaceResultsInfo]?
     
     //CRUD
     //MARK: - Create
     
     //MARK: - Read
-    static func fetchRaceList(completion: @escaping (RaceList.RacesListTopLevelDict?) -> Void) {
-        
-        guard let baseURL = URL(string: "\(DNDConstants.baseURL)") else {return}
+    func getRace(completion: @escaping([RaceResultsInfo]?) -> Void) {
+        guard let baseURL = URL(string: "\(DNDConstants.baseURL)") else {completion([]); return}
         let racesComponentURL = baseURL.appendingPathComponent("races")
-        print(racesComponentURL)
-        URLSession.shared.dataTask(with: racesComponentURL) { (data, _, error) in
+        guard let components = URLComponents(url: racesComponentURL, resolvingAgainstBaseURL: true) else {completion([]) ; return}
+        guard let finalUrl = components.url else {completion([]) ; return}
+        
+        URLSession.shared.dataTask(with: finalUrl) { (data, _, error) in
             if let error = error {
                 print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
+                completion([])
+                return
             }
-            
-            if let data = data {
-                do{
-                    let races = try JSONDecoder().decode(RaceList.RacesListTopLevelDict.self, from: data)
-                    completion(races)
-                } catch {
-                    print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
-                    completion(nil); return
-                }
+            guard let data = data else {
+                print("Data could not be set")
+                completion([])
+                return
             }
-            } .resume()
+            let jsonDecoder = JSONDecoder()
+            do {
+                let races = try jsonDecoder.decode(RacesListTopLevelDict.self, from: data)
+                completion(races.results)
+            } catch {
+                print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
+                completion([]); return
+            }
+        } .resume()
     }
     
     //MARK: - Update
     
     //MARK: - Delete
+    
+    
+    // Save function
+    // load data function
 }

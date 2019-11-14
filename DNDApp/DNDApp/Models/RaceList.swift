@@ -8,8 +8,6 @@
 
 import Foundation
 
-class RaceList {
-    
     //MARK: - List of Races
     struct RacesListTopLevelDict:Decodable {
         var count:Int
@@ -20,4 +18,3 @@ class RaceList {
         var name:String
         var url:String
     }
-}

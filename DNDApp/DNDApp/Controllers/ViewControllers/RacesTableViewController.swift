@@ -10,25 +10,32 @@ import UIKit
 
 class RacesTableViewController: UITableViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        CharacterRaceController.shared.getRace { (results) in
+            if let results = results {
+                CharacterRaceController.shared.races = results
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return CharacterRaceController.shared.races?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "raceCell", for: indexPath)
+        guard let races = CharacterRaceController.shared.races else { return UITableViewCell()}
+        let race = races[indexPath.row]
+        cell.textLabel?.text = race.name
         // Configure the cell...
 
         return cell

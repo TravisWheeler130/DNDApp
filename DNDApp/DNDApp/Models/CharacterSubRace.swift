@@ -8,8 +8,6 @@
 
 import Foundation
 
-class CharacterSubRace {
-    
     //MARK: - Subrace
     struct SubraceTopLevelDict:Decodable {
         enum CodingKeys: String, CodingKey {
@@ -26,9 +24,9 @@ class CharacterSubRace {
         var name:String
         var race:Race
         var desc:String
-        var abilityBonuses:[AbilityBonuses]
-        var startingProficiencies:[StartingProficiencyDetail]
-        var languages:[LanguageDetails]
+        var abilityBonuses:[SubRaceAbilityBonuses]
+        var startingProficiencies:[SubRaceStartingProficiencyDetail]
+        var languages:[SubRaceLanguageDetails]
         var racialTraits:[RacialTraits]
     }
     
@@ -37,7 +35,7 @@ class CharacterSubRace {
         var name:String
     }
     
-    struct AbilityBonuses:Decodable {
+    struct SubRaceAbilityBonuses:Decodable {
         
         enum CodingKeys: String, CodingKey {
             case str = "0"
@@ -55,12 +53,12 @@ class CharacterSubRace {
         var cha:Int
     }
     
-    struct StartingProficiencyDetail:Decodable {
+    struct SubRaceStartingProficiencyDetail:Decodable {
         var name:String
         var url:String
     }
     
-    struct LanguageDetails:Decodable {
+    struct SubRaceLanguageDetails:Decodable {
         var name:String
         var url:String
     }
@@ -69,4 +67,4 @@ class CharacterSubRace {
         var name:String
         var url:String
     }
-}
+
